@@ -17,7 +17,7 @@ database
 
 Here's a walkthrough of implemented user stories:
 
-<a href="https://imgur.com/3s4gT7E"><img src="https://i.imgur.com/cNrpOgJ.gif" title="source: imgur.com" /></a>
+<img src='https://i.imgur.com/cNrpOgJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
