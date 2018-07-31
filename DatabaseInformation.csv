@@ -1,0 +1,23 @@
+import MySQLdb
+
+host = "127.0.0.1"
+user = ""
+password = ""
+dbName = "Car_Inventory"
+#Open database connection
+#db = MySQLdb.connect(host, user, password, dbName)
+db = MySQLdb.connect(host, user, password)
+#Prepare a cursor object using cursor() method
+cursor = db.cursor()
+
+
+# Drop table if it already exist using execute() method.
+cursor.execute("DROP DATABASE IF EXISTS Car_Inventory")
+cursor.execute("CREATE DATABASE Car_Inventory")
+db = MySQLdb.connect(host, user, password, dbName)
+#Prepare a cursor object using cursor() method
+cursor = db.cursor()
+cursor.execute("DROP TABLE IF EXISTS CAR_INFORMATION")
+cursor.execute("DROP TABLE IF EXISTS MODEL")
+cursor.execute("DROP TABLE IF EXISTS MAKE")
+#Create table as per requirement
